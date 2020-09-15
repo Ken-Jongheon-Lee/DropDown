@@ -883,7 +883,7 @@ extension DropDown {
 		UIAccessibility.post(notification: .screenChanged, argument: self)
 
 		//deselectRows(at: selectedRowIndices)
-		selectRows(at: selectedRowIndices)
+//		selectRows(at: selectedRowIndices)
 
 		return (layout.canBeDisplayed, layout.offscreenHeight)
 	}
