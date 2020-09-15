@@ -1006,6 +1006,12 @@ extension DropDown {
             deselectRow(at: $0)
         }
     }
+    
+    public func deselectAll() {
+        selectedRowIndices.forEach { index in
+            deselectRow(index)
+        }
+    }
 
 	/// Returns the index of the selected row.
 	public var indexForSelectedRow: Index? {
